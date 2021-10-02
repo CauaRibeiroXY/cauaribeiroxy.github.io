@@ -1,15 +1,10 @@
 .container {
   max-width: 100vw;
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "aside main none";
-  -ms-grid-rows: 100% auto auto;
-      grid-template-rows: 100% auto auto;
-  -ms-grid-columns: 10vw 80vw;
-      grid-template-columns: 10vw 80vw;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  grid-template-areas: "aside main none";
+  grid-template-rows: 100% auto auto;
+  grid-template-columns: 10vw 80vw;
+  justify-content: flex-start;
   height: 100%;
 }
 
@@ -17,10 +12,7 @@
   z-index: 0;
   width: 10vw;
   min-width: 150px;
-  position: -webkit-sticky;
   position: sticky;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: aside;
   background-color: #262626;
   color: white;
@@ -51,24 +43,15 @@
 }
 
 main {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: main;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
 }
 
 .tagname {
-  background-color: #FFCB74;
+  background-color: #FF8303;
   padding: 20px;
 }
 
