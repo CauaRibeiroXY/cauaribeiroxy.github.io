@@ -1,0 +1,112 @@
+.container {
+  max-width: 100vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "aside main none";
+  -ms-grid-rows: 100% auto auto;
+      grid-template-rows: 100% auto auto;
+  -ms-grid-columns: 10vw 80vw;
+      grid-template-columns: 10vw 80vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+}
+
+.sidebar {
+  z-index: 0;
+  width: 10vw;
+  min-width: 150px;
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: aside;
+  background-color: #262626;
+  color: white;
+  height: 100%;
+  overflow: scroll;
+}
+
+.sidebar ul {
+  text-align: left;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  border-bottom: 2px solid #c3c3c3;
+}
+
+.sidebar ul li a, .sidebar ul li a:visited {
+  color: white;
+}
+
+.sidebar ul li:hover {
+  background-color: white;
+  color: black;
+}
+
+.sidebar ul li:hover a, .sidebar ul li:hover a:visited {
+  color: black;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.tagname {
+  background-color: #FFCB74;
+  padding: 20px;
+}
+
+.tagname .txtbox {
+  background-color: #F2F7F2;
+}
+
+.title-container {
+  padding: 5px 20px;
+  font-size: 1.7em;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#atributos {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#atributos td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#atributos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#atributos tr:hover {
+  background-color: #ddd;
+}
+
+#atributos th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+/*# sourceMappingURL=tag.css.map */

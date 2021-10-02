@@ -1,0 +1,67 @@
+$textcolor1 : #197DDF
+*
+    margin: 0px    
+    padding: 0px
+    font-family: 'PT Sans Caption', sans-serif
+
+.container 
+    background-color: #ffffff
+    width: calc(100% - 100px)
+    margin: 0 auto
+        
+    section
+        margin: 0px 20px
+a, a:visited
+    text-decoration: none
+
+.title-container
+    padding: 20px
+    font-size: 2em
+    color: #197DDF
+
+///Tags list
+
+.tags
+
+    font-family: arial, sans-serif
+    padding: 8px 15px
+    background-color: #ffffff
+    border: 1px solid #DADCE0
+    border-radius: 20px 20px 
+    h2
+        font-size: 1.5em
+        color: #197DDF
+        padding: 20px 0
+        
+    ul
+        font-size: 1.3em
+        list-style-type: none
+        li
+            padding: 8px
+            border-bottom:  1px solid #DADCE0
+    
+            .tag-name 
+                font-size: 1.1em
+                font-weight: bold
+                font-family: 'Source Code Pro', monospace
+                span
+                    visibility: hidden
+                a
+                    color: #197DDF
+
+            .tag-description 
+                color: #666666//#4e4e4e
+                //background-color: #dadada
+                padding: 0 20px
+            
+            &:hover
+                
+                .tag-name
+                    a 
+                        color:#D5014F
+                    span
+                        color:#197DDF
+                        visibility: visible
+                
+        li:nth-last-child(-n+1)
+            border: none

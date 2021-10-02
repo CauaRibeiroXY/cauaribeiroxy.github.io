@@ -1,0 +1,87 @@
+$cor1: #FFCB74
+$cor2: #07031A
+$cor3: #4F8A8B
+
+.container
+    max-width: 100vw
+    display: grid
+    grid-template-areas: "aside main none"
+    grid-template-rows: 100% auto auto
+    grid-template-columns: 10vw 80vw
+    justify-content: flex-start
+    height: 100%
+
+////Aside Content
+
+.sidebar
+    
+    z-index: 0
+    width: 10vw
+    min-width: 150px
+    position: sticky
+    grid-area: aside
+    background-color: #262626
+    color: white
+    height: 100%
+    overflow: scroll
+    
+
+    ul
+        text-align: left
+        li
+            padding: 10px 20px
+            border-bottom: 2px solid #c3c3c3
+            a, a:visited
+                
+                color: white
+            
+        li:hover
+            background-color: white
+            color: black
+
+            a, a:visited
+                color: black
+            
+        
+        
+
+////Main Content
+main
+    grid-area: main
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+.tagname
+    background-color: $cor1// rgb(95, 245, 145)
+    padding: 20px
+    .txtbox
+        background-color: #F2F7F2
+
+.title-container
+    padding: 5px 20px
+    font-size: 1.7em
+    color: white
+    text-shadow: 2px 2px 4px #000000
+
+#atributos
+    font-family: Arial, Helvetica, sans-serif
+    width: 100%
+    border-collapse: collapse
+    td
+        border: 1px solid #ddd
+        padding: 8px
+  
+    tr:nth-child(even)
+        background-color: #f2f2f2
+  
+    tr:hover 
+        background-color: #ddd
+  
+    th 
+        padding-top: 12px
+        padding-bottom: 12px
+        text-align: left
+        background-color: #04AA6D
+        color: white
+
