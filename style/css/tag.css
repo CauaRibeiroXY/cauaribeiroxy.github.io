@@ -1,3 +1,4 @@
+:root {--cor1: #FF8303}
 .container {
   max-width: 100vw;
   display: grid;
@@ -6,6 +7,7 @@
   grid-template-columns: 10vw 80vw;
   justify-content: flex-start;
   height: 100%;
+  background-color: #262626;
 }
 
 .sidebar {
@@ -17,7 +19,7 @@
   background-color: #262626;
   color: white;
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .sidebar ul {
@@ -46,25 +48,33 @@ main {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100%;
 }
-
+.pagina{
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
 .tagname {
-  background-color: #FF8303;
-  padding: 20px;
+  background-color: var(--cor1);
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .tagname .txtbox {
-  background-color: #F2F7F2;
+  background-color: #262626;
+  color: white;
 }
 
 .title-container {
-  padding: 5px 20px;
+  padding: 2px 15px;
   font-size: 1.7em;
-  color: white;
+  color: var(--cor1);
   text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 15px;
 }
+
+
 
 #atributos {
   font-family: Arial, Helvetica, sans-serif;
@@ -73,23 +83,27 @@ main {
 }
 
 #atributos td {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(0, 0, 0);
   padding: 8px;
+}
+#atributos tr{
+  background-color: #082032;
 }
 
 #atributos tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #334756;
 }
 
 #atributos tr:hover {
-  background-color: #ddd;
+  background-color: #1B1A17;
 }
 
 #atributos th {
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 12px;
   text-align: left;
-  background-color: #04AA6D;
-  color: white;
+  background-color: var(--cor1);
+  color: #1B1A17;
 }
 /*# sourceMappingURL=tag.css.map */
