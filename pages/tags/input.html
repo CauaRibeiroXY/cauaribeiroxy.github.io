@@ -21,144 +21,241 @@
             </ul>
         </nav>
     </header>
-        <main>
-            <section class="title-container">
-                <h1>Tag &ltinput/&gt</h1>
+    <main>
+        <section class="title-container">
+            <h1>Tag &ltinput/&gt</h1>
+        </section>
+
+        <section class="tagname">
+            <h2> Especifica um campo de entrada onde o usuário pode inserir dados. </h2>
+            <div class="txtbox">
+                <p>
+                    &lt input type="text" id="name" name="username"/&gt
+                </p>
+            </div>
+        </section>
+
+        <article>
+            <section>
+                <h2 class="pagina">Definição</h2>
+
+                <ul class="pagina">
+                    <li>
+                        <p class="description">Especifica um campo de entrada onde o usuário pode inserir dados.</p>
+                        <p>
+                            É o elemento de formulário mais importante.
+                        </p>
+                        <p>
+                            O elemento pode ser exibido de várias maneiras, dependendo do atributo type.
+                        </p>
+                    </li>
+
+                </ul>
             </section>
-            
-            <section class="tagname">
-                <h2> Especifica um campo de entrada onde o usuário pode inserir dados. </h2>
-                <div class="txtbox">
-                    <p>
-                        &lt input type="text" id="name" name="username"/&gt 
-                    </p>
-                </div>
+
+
+            <section>
+                <h2 class="pagina">Atributos</h2>
+                <table id="atributos">
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </tr>
+
+                    <tr>
+                        <td>accept</td>
+                        <td>file_extension
+                            audio/*
+                            video/*
+                            image/*
+                            media_type</td>
+                        <td>Especifica um filtro para quais tipos de arquivo o usuário pode escolher na caixa de diálogo
+                            de entrada de arquivo (apenas para type = "file")</td>
+                    </tr>
+                    <tr>
+                        <td>alt</td>
+                        <td>text</td>
+                        <td>Especifica um texto alternativo para imagens (apenas para type = "image")</td>
+                    </tr>
+                    <tr>
+                        <td>autocomplete</td>
+                        <td>on
+                            off</td>
+                        <td>Especifica se um elemento &lt input /&gt deve ter o preenchimento automático habilitado</td>
+                    </tr>
+                    <tr>
+                        <td>autofocus</td>
+                        <td>&nbsp;autofocus</td>
+                        <td>&nbsp;Especifica que um elemento &lt;input&gt; deve receber foco automaticamente quando a
+                            p&aacute;gina carrega</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;checked</td>
+                        <td>&nbsp;checked</td>
+                        <td>&nbsp;Especifica que um elemento &lt;input&gt; deve ser pr&eacute;-selecionado quando a
+                            p&aacute;gina carrega (para type = "checkbox" ou type = "radio")</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;dirname</td>
+                        <td>&nbsp;inputname.dir</td>
+                        <td>&nbsp;Especifica que a dire&ccedil;&atilde;o do texto ser&aacute; enviada</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;disabled</td>
+                        <td>&nbsp;disabled</td>
+                        <td>&nbsp;Especifica que um elemento &lt;input&gt; deve ser desativado</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;form</td>
+                        <td>form_id&nbsp;</td>
+                        <td>&nbsp;Especifica a forma &agrave; qual o elemento &lt;input&gt; pertence</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;formaction</td>
+                        <td>&nbsp;URL</td>
+                        <td>&nbsp;Especifica o URL do arquivo que ir&aacute; processar o controle de entrada quando o
+                            formul&aacute;rio for enviado (para type = "submit" e type = "image")</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;formenctype</td>
+                        <td>&nbsp; application/x-www-form-urlencoded<br />multipart/form-data<br />text/plain</td>
+                        <td>&nbsp;Especifica como os dados do formul&aacute;rio devem ser codificados ao
+                            envi&aacute;-los ao servidor (para type = "submit" e type = "image")</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;formmethod</td>
+                        <td>&nbsp;get<br />post</td>
+                        <td>&nbsp;Define o m&eacute;todo HTTP para enviar dados para o URL de a&ccedil;&atilde;o (para
+                            type = "submit" e type = "image")</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;formnovalidate</td>
+                        <td>&nbsp;formnovalidate </td>
+                        <td>&nbsp;Define que os elementos do formul&aacute;rio n&atilde;o devem ser validados quando
+                            enviados</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;formtarget</td>
+                        <td>&nbsp;_blank<br />_self<br />_parent<br />_top<br /><em>framename</em></td>
+                        <td>&nbsp;Especifica onde exibir a resposta recebida ap&oacute;s o envio do formul&aacute;rio
+                            (para type = "submit" e type = "image")</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;height</td>
+                        <td>&nbsp;<em>pixels</em></td>
+                        <td>&nbsp;Especifica a altura de um elemento &lt;input&gt; (apenas para type = "image")</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;list</td>
+                        <td>&nbsp;<em>datalist_id</em></td>
+                        <td>&nbsp;Refere-se a um elemento &lt;datalist&gt; que cont&eacute;m op&ccedil;&otilde;es
+                            predefinidas para um elemento &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;max</td>
+                        <td><em>number<br />date</em>&nbsp;</td>
+                        <td>&nbsp;Especifica o valor m&aacute;ximo para um elemento &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;maxlength</td>
+                        <td>&nbsp;<em>number</em></td>
+                        <td>&nbsp;Especifica o n&uacute;mero m&aacute;ximo de caracteres permitidos em um elemento
+                            &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;min</td>
+                        <td>number<br />date</td>
+                        <td>&nbsp;Especifica um valor m&iacute;nimo para um elemento &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;minlength</td>
+                        <td>&nbsp;<em>number</em></td>
+                        <td>&nbsp;Especifica o n&uacute;mero m&iacute;nimo de caracteres necess&aacute;rios em um
+                            elemento &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;multiple</td>
+                        <td>&nbsp;multiple</td>
+                        <td>&nbsp;Especifica que um usu&aacute;rio pode inserir mais de um valor em um elemento
+                            &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;name</td>
+                        <td>&nbsp;<em>text</em></td>
+                        <td>&nbsp;Especifica o nome de um elemento &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;pattern</td>
+                        <td>&nbsp;<em>regexp</em></td>
+                        <td>&nbsp;Especifica uma express&atilde;o regular com a qual o valor de um elemento
+                            &lt;input&gt; &eacute; verificado</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;placeholder</td>
+                        <td>&nbsp;<em>text</em></td>
+                        <td>&nbsp;Especifica uma pequena dica que descreve o valor esperado de um elemento &lt;input&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;readonly</td>
+                        <td>&nbsp;readonly</td>
+                        <td>&nbsp;Especifica que um campo de entrada &eacute; somente leitura</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;required</td>
+                        <td>&nbsp;required</td>
+                        <td>&nbsp;Especifica que um campo de entrada deve ser preenchido antes de enviar o
+                            formul&aacute;rio</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;size</td>
+                        <td>&nbsp;<em>number</em></td>
+                        <td>&nbsp;Especifica a largura, em caracteres, de um elemento &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;src</td>
+                        <td>&nbsp;URL</td>
+                        <td>&nbsp;Especifica o URL da imagem a ser usado como bot&atilde;o de envio (apenas para type =
+                            "image")</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;step</td>
+                        <td>number<br />any&nbsp;</td>
+                        <td>&nbsp;Especifica o intervalo entre os n&uacute;meros legais em um campo de entrada</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;type</td>
+                        <td>&nbsp;button<br />checkbox<br />color<br />date<br />datetime-local<br />email<br />file<br />hidden<br />image<br />month<br />number<br />password<br />radio<br />range<br />reset<br />search<br />submit<br />tel<br />text<br />time<br />url<br />week
+                        </td>
+                        <td>&nbsp;Especifica o tipo de elemento &lt;input&gt; para exibir</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;value</td>
+                        <td>&nbsp;<em>text</em></td>
+                        <td>&nbsp;Especifica o valor de um elemento &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;width</td>
+                        <td>&nbsp;<em>pixels</em></td>
+                        <td>&nbsp;Especifica a largura de um elemento &lt;input&gt; (apenas para type = "image")</td>
+                    </tr>
+                </table>
             </section>
 
-                <article>
-                    <section>
-                        <h2 class="pagina">Definição</h2>
+            <section>
+                <h2 class="pagina">Exemplo</h2>
 
-                        <ul class="pagina">
-                            <li>
-                                <p class="description">Especifica um campo de entrada onde o usuário pode inserir dados.</p>
-                                <p>
-                                    É o elemento de formulário mais importante.      
-                                </p>
-                                <p>
-                                    O elemento pode ser exibido de várias maneiras, dependendo do atributo type.
-                                </p>
-                            </li>
-
-                        </ul>
-                    </section>
-
-                
-                <section>
-                    <h2 class="pagina">Atributos</h2>
-                    <table id="atributos">
-                        <tr>
-                            <th>Atributo</th>
-                            <th>Valor</th>
-                            <th>Descrição</th>
-                        </tr>
-
-                        <tr>
-                            <td>accept</td>
-                            <td>file_extension
-                                audio/*
-                                video/*
-                                image/*
-                                media_type</td>
-                            <td>Especifica um filtro para quais tipos de arquivo o usuário pode escolher na caixa de diálogo de entrada de arquivo (apenas para type = "file")</td>
-                        </tr>
-                        <tr>
-                            <td>alt</td>
-                            <td>text</td>
-                            <td>Especifica um texto alternativo para imagens (apenas para type = "image")</td>
-                        </tr>
-                        <tr>
-                            <td>autocomplete</td>
-                            <td>on
-                                off</td>
-                            <td>Especifica se um elemento &lt input /&gt deve ter o preenchimento automático habilitado</td>
-                        </tr>
-                        <tr>
-                            <td>autofocus</td>
-                            <td>&nbsp;autofocus</td>
-                            <td>&nbsp;Especifica que um elemento &lt;input&gt; deve receber foco automaticamente quando a p&aacute;gina carrega</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;checked</td>
-                            <td>&nbsp;checked</td>
-                            <td>&nbsp;Especifica que um elemento &lt;input&gt; deve ser pr&eacute;-selecionado quando a p&aacute;gina carrega (para type = "checkbox" ou type = "radio")</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;dirname</td>
-                            <td>&nbsp;inputname.dir</td>
-                            <td>&nbsp;Especifica que a dire&ccedil;&atilde;o do texto ser&aacute; enviada</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;disabled</td>
-                            <td>&nbsp;disabled</td>
-                            <td>&nbsp;Especifica que um elemento &lt;input&gt; deve ser desativado</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;form</td>
-                            <td>form_id&nbsp;</td>
-                            <td>&nbsp;Especifica a forma &agrave; qual o elemento &lt;input&gt; pertence</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;formaction</td>
-                            <td>&nbsp;URL</td>
-                            <td>&nbsp;Especifica o URL do arquivo que ir&aacute; processar o controle de entrada quando o formul&aacute;rio for enviado (para type = "submit" e type = "image")</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;formenctype</td>
-                            <td>&nbsp; application/x-www-form-urlencoded<br />multipart/form-data<br />text/plain</td>
-                            <td>&nbsp;Especifica como os dados do formul&aacute;rio devem ser codificados ao envi&aacute;-los ao servidor (para type = "submit" e type = "image")</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;formmethod</td>
-                            <td>&nbsp;get<br />post</td>
-                            <td>&nbsp;Define o m&eacute;todo HTTP para enviar dados para o URL de a&ccedil;&atilde;o (para type = "submit" e type = "image")</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;formnovalidate</td>
-                            <td>&nbsp;formnovalidate </td>
-                            <td>&nbsp;Define que os elementos do formul&aacute;rio n&atilde;o devem ser validados quando enviados</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;formtarget</td>
-                            <td>&nbsp;_blank<br />_self<br />_parent<br />_top<br /><em>framename</em></td>
-                            <td>&nbsp;Especifica onde exibir a resposta recebida ap&oacute;s o envio do formul&aacute;rio (para type = "submit" e type = "image")</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;height</td>
-                            <td>&nbsp;<em>pixels</em></td>
-                            <td>&nbsp;Especifica a altura de um elemento &lt;input&gt; (apenas para type = "image")</td>
-                            </tr>
-                            <tr>
-                            <td>&nbsp;list</td>
-                            <td>&nbsp;<em>datalist_id</em></td>
-                            <td>&nbsp;Refere-se a um elemento &lt;datalist&gt; que cont&eacute;m op&ccedil;&otilde;es predefinidas para um elemento &lt;input&gt;</td>
-                            </tr>
-                    </table>
-                </section>
-
-                <section>
-                    <h2 class="pagina">Exemplo</h2>
-
-                    <div class="tagname">
-                        <div class="txtbox">
-                            <p>
-                                Texto interno
-                            </p>
-                        </div>
+                <div class="tagname">
+                    <div class="txtbox">
+                        <p>
+                            &lt;input type="text" name="input" value="Digite aqui"&gt;
+                        </p>
                     </div>
+                </div>
 
-                </section>
-        </main>
+            </section>
+    </main>
 
     <footer>
         <p>&copy; 2021 - IFNMG</p>
