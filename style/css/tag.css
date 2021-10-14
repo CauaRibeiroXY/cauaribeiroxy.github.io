@@ -7,17 +7,17 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.pagina{
+.tag-title{
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
 }
-.tagname {
+.tag-name {
   background-color: var(--cor1);
   padding: 15px;
   margin-bottom: 20px;
 }
 
-.tagname .txtbox {
+.txtbox {
   background-color: #262626;
   color: white;
 }
@@ -60,4 +60,4 @@ main {
   background-color: var(--cor1);
   color: #1B1A17;
 }
-/*# sourceMappingURL=tag.css.map */
+ 

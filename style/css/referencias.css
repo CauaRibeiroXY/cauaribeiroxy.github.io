@@ -74,7 +74,7 @@ main {
 }
 
 .tags-list li:hover .tag-name span {
-  color: #FF8303;
+  
   visibility: visible;
 }
 .tags-list li:hover .tag-description{
