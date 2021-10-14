@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/css/main.css">
     <link rel="stylesheet" href="../../style/css/tag.css">
-    <title>Tag ..</title>
+    <title>Tag select</title>
 </head>
 
 <body>
@@ -23,14 +23,14 @@
     </header>
         <main>
             <section class="title-container">
-                <h1>Tag div</h1>
+                <h1>Tag &ltselect/&gt</h1>
             </section>
 
             <section class="tag-name">
-                <h2>Parte preta</h2>
+                <h2> O elemento &ltselect/&gt  é usado para criar uma lista suspensa.</h2>
                 <div class="txtbox">
                     <p>
-                        Texto interno
+                        &ltselect name="cars" id="cars"/&gt
                     </p>
                 </div>
             </section>
@@ -41,7 +41,16 @@
 
                     <ul class="tag-title">
                         <li>
-                            <p class="description">Especifica um campo de entrada onde o usuário pode inserir dados.</p>
+                            <p class="description">O &ltselect/&gt elemento é mais frequentemente usado em um formulário, para coletar a entrada do usuário.</p>
+                            <p>
+                                O nameatributo é necessário para fazer referência aos dados do formulário após o formulário ser enviado (se você omitir o nameatributo, nenhum dado da lista suspensa será enviado).   
+                            </p>
+                            <p>
+                                O id atributo é necessário para associar a lista suspensa a um rótulo.
+                            </p>
+                            <p>
+                                As tags &ltoption/&gt dentro do &ltselect/&gt elemento definem as opções disponíveis na lista suspensa.
+                            </p>
                         </li>
 
                     </ul>
@@ -57,15 +66,40 @@
                         </tr>
 
                         <tr>
-                            <td>Atributo 1</td>
-                            <td>Valor 1</td>
-                            <td>Descrição 1</td>
-                        </tr>
-                        <tr>
-                            <td>Atributo 2</td>
-                            <td>Valor 2</td>
-                            <td>Descrição 2</td>
-                        </tr>
+                            <td>&nbsp;autofocus</td>
+                            <td>&nbsp;autofocus</td>
+                            <td>Especifica que a lista suspensa deve obter o foco automaticamente quando a p&aacute;gina &eacute; carregada&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td>&nbsp;disabled</td>
+                            <td>&nbsp;disabled</td>
+                            <td>&nbsp;Especifica que uma lista suspensa deve ser desativada</td>
+                            </tr>
+                            <tr>
+                            <td>&nbsp;form</td>
+                            <td>&nbsp;form_id</td>
+                            <td>&nbsp;Define a qual formul&aacute;rio a lista suspensa pertence</td>
+                            </tr>
+                            <tr>
+                            <td>&nbsp;multiple</td>
+                            <td>&nbsp;multiple</td>
+                            <td>&nbsp;Especifica que v&aacute;rias op&ccedil;&otilde;es podem ser selecionadas de uma vez</td>
+                            </tr>
+                            <tr>
+                            <td>&nbsp;<em>name</em></td>
+                            <td>&nbsp;<em>name</em></td>
+                            <td>&nbsp;Define um nome para a lista suspensa</td>
+                            </tr>
+                            <tr>
+                            <td>&nbsp;required</td>
+                            <td>&nbsp;required</td>
+                            <td>&nbsp;Especifica que o usu&aacute;rio deve selecionar um valor antes de enviar o formul&aacute;rio</td>
+                            </tr>
+                            <tr>
+                            <td>&nbsp;size</td>
+                            <td>&nbsp;<em>number</em></td>
+                            <td>&nbsp;Define o n&uacute;mero de op&ccedil;&otilde;es vis&iacute;veis em uma lista suspensa</td>
+                            </tr>
 
                     </table>
                 </section>
@@ -76,7 +110,20 @@
                     <div class="tag-name">
                         <div class="txtbox">
                             <p>
-                                Texto interno
+                                &lt;label for=&quot;instrumento&quot;&gt; Escolha seu instrumento&lt;/label&gt;
+                            </p>
+                            <p>
+                                &lt;select name=&quot;instrumento&quot; id=&quot;instrumento&quot;&gt;
+                            </p><p>
+                                  &lt;option value=&quot;trp&quot;&gt;trompete&lt;/option&gt;
+                                </p><p>
+                                  &lt;option value=&quot;tpa&quot;&gt;trompa&lt;/option&gt;
+                                </p><p>
+                                  &lt;option value=&quot;tbn&quot;&gt;trombone&lt;/option&gt;
+                                </p><p>
+                                  &lt;option value=&quot;tub&quot;&gt;tuba&lt;/option&gt;
+                                </p><p> 
+                                &lt;/select&gt;
                             </p>
                         </div>
                     </div>
