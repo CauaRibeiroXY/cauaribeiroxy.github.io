@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/css/main.css">
+    <link rel="stylesheet" href="../../style/css/tag.css">
+    <title>Tag del</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">&ltTags Html/&gt</div>
+            <ul class="navbar-options">
+                <li class="navbar-options-item"><a href="../../index.html">Home</a></li>
+                <li class="navbar-options-item"><a href="../referencias.html">Referencias</a></li>
+                <li class="navbar-options-item"><a href="../sobre.html">Sobre</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="title-container">
+            <h1>Tag &ltdel/&gt</h1>
+        </section>
+
+        <section class="tag-name">
+
+
+            <h2> Um texto com uma parte excluída e uma nova parte inserida: </h2>
+            <div class="txtbox">
+                
+                &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
+               <br></br>
+               <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+            </div>
+        </section>
+
+        <article>
+            <section>
+                <h2 class="tag-title">Definição</h2>
+                <ul class="txtbox">
+                    <ul class="tag-title">
+                        <li>
+                            <p class="description">A tag define texto que foi excluído de um documento. Os navegadores geralmente atacam uma linha através de texto suprimido.</p>
+                    
+                        </li>
+
+                    </ul>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2 class="tag-title">Atributos</h2>
+                <table id="atributos">
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </tr>
+
+                    <tr>
+                        <td>cite</td>
+                        <td>URL</td>
+                        <td>Especifica um URL para um documento que explica o motivo pelo qual o texto foi excluído / alterado
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>datetime</td>
+                        <td>YYYY-MM-DDThh:mm:ssTZD	</td>
+                        <td>Especifica a data e hora de quando o texto foi excluído / alterado</td>
+                    </tr>
+                   
+                </table>
+            </section>
+
+            <section>
+                <h2 class="tag-title">Exemplo</h2>
+
+                <div class="tag-name">
+                    <div class="txtbox">
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;style&gt;<br>
+                        del {background-color: tomato;} <br>
+                        ins {background-color: yellow;} <br>
+                        &lt;/style&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+
+                        &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;<br>
+
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                        <br></br>
+                        <html>
+                            <head>
+                            <style>
+                            del {background-color: tomato;}
+                            ins {background-color: yellow;}
+                            </style>
+                            </head>
+                            <body>
+                            
+                            <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+                            
+                            </body>
+                            </html>
+                    </div>
+                </div>
+
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 - IFNMG</p>
+    </footer>
+
+</body>
+
+</html>

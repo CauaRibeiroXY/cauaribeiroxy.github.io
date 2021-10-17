@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/css/main.css">
     <link rel="stylesheet" href="../../style/css/tag.css">
-    <title>Tag details</title>
+    <title>Tag dt</title>
 </head>
 
 <body>
@@ -23,40 +23,53 @@
     </header>
     <main>
         <section class="title-container">
-            <h1>Tag &lt;details/&gt;</h1>
+            <h1>Tag &ltdt/&gt</h1>
         </section>
+
         <section class="tag-name">
-            <h2>Especifique os detalhes que o usuário pode abrir e fechar sob demanda:</h2>
+            <h2> Uma lista de descrição, com termos e descrições: </h2>
             <div class="txtbox">
-                <p>&lt;details&gt;</p>
-                <p>&nbsp; &lt;summary&gt;Ver mais&lt;/summary&gt;</p>
-                <p>&nbsp; &lt;p&gt;essa &eacute; a continua&ccedil;&atilde;o do texto&lt;/p&gt;</p>
-                <p>&lt;/details&gt;</p><br>
-                <details>
-                    <summary>Ver mais</summary>
-                    <p>essa é a continuação do texto</p>
-                </details>
+                    &lt;dl&gt;<br>
+                    &lt;dt&gt;Coffee&lt;/dt&gt;<br>
+                    &lt;dd&gt;Black hot drink&lt;/dd&gt;<br>
+                    &lt;dt&gt;Milk&lt;/dt&gt;<br>
+                    &lt;dd&gt;White cold drink&lt;/dd&gt;
+                    &lt;/dl&gt;
+
+                    <br></br>
+                <p>
+                    <dl>
+                        <dt>Coffee</dt>
+                        <dd>Black hot drink</dd>
+                        <dt>Milk</dt>
+                        <dd>White cold drink</dd>
+                      </dl>
+                </p>
             </div>
         </section>
 
         <article>
             <section>
                 <h2 class="tag-title">Definição</h2>
-
                 <ul class="txtbox">
-                    <li>
-                        <p class="description">A&nbsp;&lt;details&gt; tag especifica detalhes adicionais que o usu&aacute;rio pode abrir e fechar sob demanda.</p>
-                        <p>Também é usado frequentemente usada para criar um widget interativo que o usuário pode abrir e fechar. Por padrão, o widget está fechado. Quando aberto, ele se expande e exibe o conteúdo interno.</p>
-                    </li>
+                    <ul class="tag-title">
+                        <li>
+                            <p class="description">A tag define um termo/nome em uma lista de descrição.</p>
+                            <p>
+                                A tag é usada em conjunto com dl (define uma lista de descrição) e ddd (descreve cada termo/nome).
+                            </p>
+                        </li>
 
+                    </ul>
                 </ul>
             </section>
+
 
             <section>
                 <h2 class="tag-title">Atributos</h2>
                 <div class="txtbox">
                 <p>
-                    A &lt;details&gt;&nbsp;tag também suporta os atributos globais em HTML .
+                    A &lt;dt&gt;&nbsp;tag também suporta os atributos globais em HTML .
                  </p>
                 </div> 
             </section>
@@ -66,19 +79,19 @@
 
                 <div class="tag-name">
                     <div class="txtbox">
-                        <p>&lt;details style=&quot;color: red &quot;&gt;</p>
-<p>&nbsp; &lt;summary&gt;Ver mais&lt;/summary&gt;</p>
-<p>&nbsp; &lt;p style=&quot;color: blue&quot;&gt;Texto em azul&lt;/p&gt;</p>
-<p>&lt;/details&gt;</p>
-<br>
-<details style="color: red ">
-    <summary>Ver mais</summary>
-    <p style="color: blue">Texto em azul</p>
-  </details>
+                        dt {
+                            display: block;
+                        }
+                        <br></br>
+                        <p>
+                            <dt>
+                                display: block;
+                            </dt>
+                        </p>
                     </div>
                 </div>
+
             </section>
-        </article>
     </main>
 
     <footer>

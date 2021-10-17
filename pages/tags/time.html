@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/css/main.css">
     <link rel="stylesheet" href="../../style/css/tag.css">
-    <title>Tag details</title>
+    <title>Tag time</title>
 </head>
 
 <body>
@@ -23,19 +23,14 @@
     </header>
     <main>
         <section class="title-container">
-            <h1>Tag &lt;details/&gt;</h1>
+            <h1>Tag time</h1>
         </section>
         <section class="tag-name">
-            <h2>Especifique os detalhes que o usuário pode abrir e fechar sob demanda:</h2>
+            <h2> Define uma hora específica (ou data e hora).</h2>
             <div class="txtbox">
-                <p>&lt;details&gt;</p>
-                <p>&nbsp; &lt;summary&gt;Ver mais&lt;/summary&gt;</p>
-                <p>&nbsp; &lt;p&gt;essa &eacute; a continua&ccedil;&atilde;o do texto&lt;/p&gt;</p>
-                <p>&lt;/details&gt;</p><br>
-                <details>
-                    <summary>Ver mais</summary>
-                    <p>essa é a continuação do texto</p>
-                </details>
+                <p>
+                    &lt;p&gt;I have a date on &lt;time datetime="2008-02-14 20:00"&gt; Valentines day&lt;/time&gt;.&lt;/p&gt;
+                </p>
             </div>
         </section>
 
@@ -45,8 +40,7 @@
 
                 <ul class="txtbox">
                     <li>
-                        <p class="description">A&nbsp;&lt;details&gt; tag especifica detalhes adicionais que o usu&aacute;rio pode abrir e fechar sob demanda.</p>
-                        <p>Também é usado frequentemente usada para criar um widget interativo que o usuário pode abrir e fechar. Por padrão, o widget está fechado. Quando aberto, ele se expande e exibe o conteúdo interno.</p>
+                        <p class="description">O elemento HTML time representa o tempo tanto no formato de 24 horas ou como uma data precisa no calendário Gregoriano (com informações opcionais de tempo e fuso horário).</p>
                     </li>
 
                 </ul>
@@ -54,11 +48,19 @@
 
             <section>
                 <h2 class="tag-title">Atributos</h2>
-                <div class="txtbox">
-                <p>
-                    A &lt;details&gt;&nbsp;tag também suporta os atributos globais em HTML .
-                 </p>
-                </div> 
+                <table id="atributos">
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </tr>
+
+                    <tr>
+                        <td>datetime</td>
+                        <td>datetime</td>
+                        <td>É usado para traduzir a hora em um formato legível pela máquina</td>
+                    </tr>
+                </table>
             </section>
 
             <section>
@@ -66,15 +68,9 @@
 
                 <div class="tag-name">
                     <div class="txtbox">
-                        <p>&lt;details style=&quot;color: red &quot;&gt;</p>
-<p>&nbsp; &lt;summary&gt;Ver mais&lt;/summary&gt;</p>
-<p>&nbsp; &lt;p style=&quot;color: blue&quot;&gt;Texto em azul&lt;/p&gt;</p>
-<p>&lt;/details&gt;</p>
-<br>
-<details style="color: red ">
-    <summary>Ver mais</summary>
-    <p style="color: blue">Texto em azul</p>
-  </details>
+                        <p>
+                             &lt;p&gt;Open from &lt;time&gt;10:00&lt;/time&gt; to &lt;time&gt;21:00&lt;/time&gt; every weekday.&lt;/p&gt;
+                        </p>
                     </div>
                 </div>
             </section>

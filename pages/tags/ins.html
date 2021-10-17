@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/css/main.css">
     <link rel="stylesheet" href="../../style/css/tag.css">
-    <title>Tag blockquote</title>
+    <title>Tag ins</title>
 </head>
 
 <body>
@@ -23,33 +23,38 @@
     </header>
     <main>
         <section class="title-container">
-            <h1>Tag &lt;blockquote/&gt;</h1>
+            <h1>Tag &ltins/&gt</h1>
         </section>
+
         <section class="tag-name">
-            <h2>Parte preta</h2>
+            <h2> Um texto com uma parte excluída e uma nova parte inserida: </h2>
             <div class="txtbox">
-                <p>&lt;blockquote cite=&quot;https://myanimelist.net/manga/23390/Shingeki_no_Kyojin&quot;&gt;</p>
-                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Centenas de anos atr&aacute;s,
-                    surgiram criaturas horr&iacute;veis que se assemelhavam a humanos...</p>
-                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/blockquote&gt;</p><br>
-                <blockquote cite="https://myanimelist.net/manga/23390/Shingeki_no_Kyojin">
-                    Centenas de anos atrás, surgiram criaturas horríveis que se assemelhavam a humanos...
-                    </blockquote>
+                &lt;p&gt;
+                    My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!
+                &lt;/p&gt;
+                <br></br> 
+                <p>
+                    My favorite color is <del>blue</del> <ins>red</ins>!
+                </p>
             </div>
         </section>
 
         <article>
             <section>
                 <h2 class="tag-title">Definição</h2>
-
                 <ul class="txtbox">
-                    <li>
-                        <p class="description">A &lt;blockquote&gt; tag especifica uma se&ccedil;&atilde;o citada de
-                            outra fonte.</p>
-                    </li>
+                    <ul class="tag-title">
+                        <li>
+                            <p class="description">A tag define um texto que foi inserido em um documento.</p>
+                            <p>
+                                Os navegadores geralmente sublinham o texto inserido.
+                            </p>
+                        </li>
 
+                    </ul>
                 </ul>
             </section>
+
 
             <section>
                 <h2 class="tag-title">Atributos</h2>
@@ -63,10 +68,14 @@
                     <tr>
                         <td>cite</td>
                         <td>URL</td>
-                        <td>Especifica a fonte da cotação</td>
+                        <td>Especifica um URL para um documento que explica o motivo pelo qual o texto foi inserido / alterado</td>
                     </tr>
-
-
+                    <tr>
+                        <td>datetime</td>
+                        <td>YYYY-MM-DDThh:mm:ssTZD</td>
+                        <td>Especifica a data e hora em que o texto foi inserido / alterado</td>
+                    </tr>
+                    
                 </table>
             </section>
 
@@ -75,20 +84,17 @@
 
                 <div class="tag-name">
                     <div class="txtbox">
-                        <p>&lt;blockquote style=" margin-left: 0"
-                            cite="https://myanimelist.net/manga/23390/Shingeki_no_Kyojin"&gt;<br />Centenas de anos
-                            atr&aacute;s, surgiram criaturas horr&iacute;veis que se assemelhavam a
-                            humanos...&lt;/blockquote&gt;
-                        </p><br>
-                        <blockquote style="  margin-left: 0"
-                            cite="https://myanimelist.net/manga/23390/Shingeki_no_Kyojin">
-                            Centenas de anos atrás, surgiram criaturas horríveis que se assemelhavam a humanos...
-                        </blockquote>
-
+                        &lt;p&gt;
+                        My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;!
+                    &lt;/p&gt;
+                    <br></br> 
+                        <p>
+                            My favorite color is <del>blue</del> <ins>red</ins>
+                        </p>
                     </div>
                 </div>
+
             </section>
-        </article>
     </main>
 
     <footer>

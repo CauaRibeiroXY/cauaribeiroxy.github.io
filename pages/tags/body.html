@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/css/main.css">
     <link rel="stylesheet" href="../../style/css/tag.css">
-    <title>Tag details</title>
+    <title>Tag body</title>
 </head>
 
 <body>
@@ -23,19 +23,17 @@
     </header>
     <main>
         <section class="title-container">
-            <h1>Tag &lt;details/&gt;</h1>
+            <h1>Tag body</h1>
         </section>
         <section class="tag-name">
-            <h2>Especifique os detalhes que o usuário pode abrir e fechar sob demanda:</h2>
+            <h2>Define o corpo do elemento</h2>
             <div class="txtbox">
-                <p>&lt;details&gt;</p>
-                <p>&nbsp; &lt;summary&gt;Ver mais&lt;/summary&gt;</p>
-                <p>&nbsp; &lt;p&gt;essa &eacute; a continua&ccedil;&atilde;o do texto&lt;/p&gt;</p>
-                <p>&lt;/details&gt;</p><br>
-                <details>
-                    <summary>Ver mais</summary>
-                    <p>essa é a continuação do texto</p>
-                </details>
+                <div class="code">
+                    &lt;body>
+                        <p>&lt;h1>This is a heading. &lt;/h1></p>
+                        <p>&lt;p>This is a paragraph. &lt;/p></p>
+                    &lt;/body>
+                </div>
             </div>
         </section>
 
@@ -45,8 +43,10 @@
 
                 <ul class="txtbox">
                     <li>
-                        <p class="description">A&nbsp;&lt;details&gt; tag especifica detalhes adicionais que o usu&aacute;rio pode abrir e fechar sob demanda.</p>
-                        <p>Também é usado frequentemente usada para criar um widget interativo que o usuário pode abrir e fechar. Por padrão, o widget está fechado. Quando aberto, ele se expande e exibe o conteúdo interno.</p>
+                        <div class="description">
+                        <p>O elemento body contém todo o conteúdo de um documento HTML, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.. </p>
+                        <p>Só pode haver um &lt;body> elemento em um documento HTML.</p>
+                    </div>
                     </li>
 
                 </ul>
@@ -54,11 +54,9 @@
 
             <section>
                 <h2 class="tag-title">Atributos</h2>
-                <div class="txtbox">
-                <p>
-                    A &lt;details&gt;&nbsp;tag também suporta os atributos globais em HTML .
-                 </p>
-                </div> 
+                    <div class="txtbox">
+                        <p>A tag &lt;body> suporta todos os atributos globais em HTML .</p>
+                    </div>
             </section>
 
             <section>
@@ -66,15 +64,12 @@
 
                 <div class="tag-name">
                     <div class="txtbox">
-                        <p>&lt;details style=&quot;color: red &quot;&gt;</p>
-<p>&nbsp; &lt;summary&gt;Ver mais&lt;/summary&gt;</p>
-<p>&nbsp; &lt;p style=&quot;color: blue&quot;&gt;Texto em azul&lt;/p&gt;</p>
-<p>&lt;/details&gt;</p>
-<br>
-<details style="color: red ">
-    <summary>Ver mais</summary>
-    <p style="color: blue">Texto em azul</p>
-  </details>
+                        <div class="code">
+                                &lt;body>
+                                    <p>&lt;h1>This is a heading. &lt;/h1></p>
+                                    <p>&lt;p>This is a paragraph. &lt;/p></p>
+                                &lt;/body>
+                        </div>
                     </div>
                 </div>
             </section>
