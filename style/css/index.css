@@ -3,7 +3,7 @@ body{
 }
 
 .backgroundImage{
-  background-image: url("./style/Images/BackPng.png");
+  background-image: url("../../style/images/BackPng.png");
   width: 85vh;
   height: 90vh;
   margin:0 auto ;
