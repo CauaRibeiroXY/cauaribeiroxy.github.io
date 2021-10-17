@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/css/main.css">
+    <link rel="stylesheet" href="../../style/css/tag.css">
+    <title>Tag canvas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">&ltTags Html/&gt</div>
+            <ul class="navbar-options">
+                <li class="navbar-options-item"><a href="#Home">Home</a></li>
+                <li class="navbar-options-item"><a href="../index.html">Referencias</a></li>
+                <li class="navbar-options-item"><a href="#Sobre">Sobre</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="title-container">
+            <h1>Tag &ltcanvas/&gt</h1>
+        </section>
+
+        <section class="tag-name">
+            <h2> Desenhe um retângulo vermelho na mosca, e mostre-o dentro do canvas element: </h2>
+            <div class="txtbox">
+                &lt;canvas id=&quot;myCanvas&quot;&gt;<br>
+                Your browser does not support the canvas tag.br <br>
+                &lt;/canvas&gt;<br>
+                
+                &lt;script&gt;<br>
+                var canvas = document.getElementById(&quot;myCanvas&quot;);<br>
+                var ctx = canvas.getContext(&quot;2d&quot;);<br>
+                ctx.fillStyle = &quot;#FF0000&quot;;<br>
+                ctx.fillRect(0, 0, 80, 80);<br>
+                &lt;/script&gt;
+
+                <br></br>
+
+                <canvas id="myCanvas">
+                    Your browser does not support the canvas tag.
+                    </canvas>
+                    
+                    <script>
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "#FF0000";
+                    ctx.fillRect(0, 0, 80, 80);
+                    </script>
+            </div>
+
+        </section>
+
+        <article>
+            <section>
+                <h2 class="tag-title">Definição</h2>
+                <ul class="txtbox">
+                    <ul class="tag-title">
+                        <li>
+                            <p class="description">A tag é usada para desenhar gráficos, em tempo real, via scripting (geralmente JavaScript).</p>
+                            <p>
+                                A tag é transparente, e é apenas um contêiner para gráficos, você deve usar um script para realmente desenhar os gráficos.
+                            </p>
+                            <p>
+                                Qualquer texto dentro do elemento será exibido em navegadores com JavaScript desativado e em navegadores que não suportam.
+                            </p>
+                        </li>
+
+                    </ul>
+                </ul>>
+            </section>
+
+
+            <section>
+                <h2 class="tag-title">Atributos</h2>
+                <table id="atributos">
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </tr>
+
+                    <tr>
+                        <td>height</td>
+                        <td>pixels</td>
+                        <td>Especifica a altura da tela. O valor padrão é 150</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>pixels</td>
+                        <td>Especifica a largura da tela. O valor padrão é 300</td>
+                    </tr>
+                    
+                </table>
+            </section>
+
+            <section>
+                <h2 class="tag-title">Exemplo</h2>
+                <div class="tag-name">
+                    <div class="txtbox">
+
+                        &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot;<br>
+                        style=&quot;border:1px solid #000000;&quot;&gt;<br>
+                        &lt;/canvas&gt;
+
+                        <br></br>
+                        
+                        <canvas id="myCanvas" width="200" height="100"
+                        style="border:1px solid #000000;">
+                        </canvas>
+                    </div>>
+                </div>
+
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 - IFNMG</p>
+    </footer>
+
+</body>
+
+</html>
