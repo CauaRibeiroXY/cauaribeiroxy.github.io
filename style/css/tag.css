@@ -63,4 +63,11 @@ main {
   background-color: var(--cor1);
   color: #1B1A17;
 }
- 
+
+.code > *{
+  margin-left: 25px;
+  max-width: calc(100% - 20px)
+}
+.description > *{
+  margin-bottom: 20px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/css/main.css">
+    <link rel="stylesheet" href="../../style/css/tag.css">
+    <title>Tag source</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">&ltTags Html/&gt</div>
+            <ul class="navbar-options">
+                <li class="navbar-options-item"><a href="../../index.html">Home</a></li>
+                <li class="navbar-options-item"><a href="../referencias.html">Referencias</a></li>
+                <li class="navbar-options-item"><a href="../sobre.html">Sobre</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="title-container">
+            <h1>Tag source</h1>
+        </section>
+        <section class="tag-name">
+            <h2>Um reprodutor de áudio com dois arquivos de origem. O navegador escolherá o primeiro &lt;source> que suporta:</h2>
+            <div class="txtbox">
+                <div class="code">
+                    &lt;audio controls>
+                        <p>&lt;source src="horse.ogg" type="audio/ogg"></p>
+                        <p>&lt;source src="horse.mp3" type="audio/mpeg"></p>
+                        <p>Your browser does not support the audio element.</p>
+                    &lt;/audio>
+                </div>
+            </div>
+        </section>
+
+        <article>
+            <section>
+                <h2 class="tag-title">Definição</h2>
+
+                <ul class="txtbox">
+                    <li>
+                        <div class="description"> O elemento source é utilizado para especificar múltiplos recursos de mídia de elementos &lt;picture>,  &lt;audio> ou &lt;video> em HTML5. É um elemento vazio.</div>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="tag-title">Atributos</h2>
+                <table id="atributos">
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </tr>
+
+                    <tr>
+                        <td>media</td>
+                        <td>media_query</td>
+                        <td>Aceita qualquer consulta de mídia válida que normalmente seria definida em um CSS</td>
+                    </tr>
+
+                    <tr>
+                        <td>sizes</td>
+                        <td></td>
+                        <td>Especifica tamanhos de imagem para diferentes layouts de página</td>
+                    </tr>
+
+                    <tr>
+                        <td>src</td>
+                        <td>URL</td>
+                        <td>Requerido quando &LT;source> é usado em &LT;audio> e &LT;video>. Especifica o URL do arquivo de mídia</td>
+                    </tr>
+
+                    <tr>
+                        <td>srcset</td>
+                        <td>URL</td>
+                        <td>Requerido quando &LT;source> é usado em &LT;picture>. Especifica o URL da imagem para usar em diferentes situações </td>
+                    </tr>
+
+                    <tr>
+                        <td>type</td>
+                        <td>MIME-type</td>
+                        <td>Especifica o tipo MIME-type do recurso</td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <section>
+                <h2 class="tag-title">Exemplo</h2>
+
+                <div class="tag-name">
+                    <div class="txtbox">
+                        <div class="code">
+                            &lt;audio controls>
+                                <p>&lt;source src="horse.ogg" type="audio/ogg"></p>
+                                <p>&lt;source src="horse.mp3" type="audio/mpeg"></p>
+                                <p>Your browser does not support the audio element.</p>
+                            &lt;/audio>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 - IFNMG</p>
+    </footer>
+
+</body>
+
+</html>

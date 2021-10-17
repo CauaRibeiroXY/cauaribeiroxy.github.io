@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/css/main.css">
     <link rel="stylesheet" href="../../style/css/tag.css">
-    <title>Tag ..</title>
+    <title>Tag template</title>
 </head>
 
 <body>
@@ -23,14 +23,17 @@
     </header>
     <main>
         <section class="title-container">
-            <h1>Tag div</h1>
+            <h1>Tag template</h1>
         </section>
         <section class="tag-name">
-            <h2>Parte preta</h2>
+            <h2>Use &LT;template> para manter algum conteúdo que ficará oculto quando a página for carregada.</h2>
             <div class="txtbox">
-                <p>
-                    Texto interno
-                </p>
+                <div class="code">
+                    &LT;template>
+                       <p> &LT;h2>Flower&LT;/h2></p>
+                       <p> &LT;img src="img_white_flower.jpg" width="214" height="204"></p>
+                    &LT;/template>
+                </div>
             </div>
         </section>
 
@@ -40,7 +43,13 @@
 
                 <ul class="txtbox">
                     <li>
-                        <p class="description">Especifica um campo de entrada onde o usuário pode inserir dados.</p>
+                        <div class="description">
+                            <p>A &LT;template>tag é usada como um contêiner para manter algum conteúdo HTML oculto do usuário quando a página é carregada.</p>
+
+                            <p>O conteúdo interno &LT;template>pode ser renderizado posteriormente com um JavaScript.</p>
+                                
+                            <p>Você pode usar a &LT;template>tag se tiver algum código HTML que deseja usar repetidamente, mas não antes de solicitá-lo. Para fazer isso sem a &LT;template>tag, você deve criar o código HTML com JavaScript para evitar que o navegador renderize o código.</p>
+                        </div>
                     </li>
 
                 </ul>
@@ -48,25 +57,9 @@
 
             <section>
                 <h2 class="tag-title">Atributos</h2>
-                <table id="atributos">
-                    <tr>
-                        <th>Atributo</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
-                    </tr>
-
-                    <tr>
-                        <td>Atributo 1</td>
-                        <td>Valor 1</td>
-                        <td>Descrição 1</td>
-                    </tr>
-                    <tr>
-                        <td>Atributo 2</td>
-                        <td>Valor 2</td>
-                        <td>Descrição 2</td>
-                    </tr>
-
-                </table>
+                <div class="txtbox">
+                    <p>A tag &lt;template> suporta todos os atributos globais em HTML .</p>
+                </div>
             </section>
 
             <section>
@@ -74,11 +67,13 @@
 
                 <div class="tag-name">
                     <div class="txtbox">
-                        <p>
-                            Texto interno
-                        </p>
+                        <div class="code">
+                            &LT;template>
+                               <p> &LT;h2>Flower&LT;/h2></p>
+                               <p> &LT;img src="img_white_flower.jpg" width="214" height="204"></p>
+                            &LT;/template>
+                        </div>
                     </div>
-                </div>
             </section>
         </article>
     </main>
