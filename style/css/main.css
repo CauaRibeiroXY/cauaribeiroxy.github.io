@@ -52,6 +52,9 @@ body {
 .navbar-options-item{
   padding: 20px;
 }
+.selected{
+  color: #ff8000b9;
+}
 
 .navbar-options-item a, .navbar-options-item a:visited {
   color: var(--cor1);
