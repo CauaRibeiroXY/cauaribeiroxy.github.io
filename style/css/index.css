@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+body{
+  background-color: #262626;   
+}
+
+.backgroundImage{
+  background-image: url("../../style/imagens/BackPng.png");
+  width: 85vh;
+  height: 90vh;
+  margin:0 auto ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position:relative;
+}
+
